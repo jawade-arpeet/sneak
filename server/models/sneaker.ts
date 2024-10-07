@@ -13,7 +13,7 @@ const sneakerModel = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  image: {
+  imgURL: {
     type: String,
     required: true,
   },
@@ -24,3 +24,5 @@ const sneakerModel = new mongoose.Schema({
 });
 
 const Sneaker = mongoose.model("Sneaker", sneakerModel);
+
+export default Sneaker;
